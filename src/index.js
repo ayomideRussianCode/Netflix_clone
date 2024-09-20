@@ -1,10 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
-// import GlobalStyles from './global-styles';
+import React from "react";
+import { createRoot } from "react-dom/client";
+import "normalize.css";
+import App from "./App";
+import { GlobalStyles } from "./global-styles";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const rootElement = document.getElementById("root");
+
+const root = createRoot(rootElement);
+
 root.render(
-    <App/>
+  <>
+    <GlobalStyles />
+    <App />
+  </>
 );
-
