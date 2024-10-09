@@ -18,7 +18,9 @@ Header.ButtonLink = function ButtonLink({children, ...restProps}) {
 Header.Logo = function HeaderLogo({ to, ...restProps }) {
   return (
     <ReactRouterLink to={to}>
-      <Logo {...restProps} />
+
+      {/* where is the image here? or there is none */}
+      <Logo {...restProps} /> 
     </ReactRouterLink>
   );
 };
